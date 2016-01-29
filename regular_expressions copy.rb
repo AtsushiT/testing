@@ -1,5 +1,7 @@
 # Determine whether a string contains a Social Security number.
 
+#comment for git
+
 def has_ssn?(string)
  if /\d{3}-\d{2}-\d{4}/ =~ string
   return true
@@ -60,10 +62,6 @@ puts hide_all_ssns(string) == string
 def format_ssns(string)
   string.gsub(/\b(\d\d\d)\.?(\d\d)\.?(\d\d\d\d)\b/,
         "\1-\2-\3")
-
-  正規表現まとめ - Qiita
-http://qiita.com/merrill/items/8af95dd3cb3977a89636
-
 end
 
 puts "format_ssns finds and reformat any SSNs in the string"
